@@ -14,6 +14,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 1%;
+    /* background-color: aqua; */
 }
 .img-responsive{
     width: 100%;
@@ -22,26 +23,26 @@
     border-radius: 15px;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
-.text-center{
+.text-center {
     text-align: center;
 }
-.text-left{
+.text-left {
     text-align: left;
 }
-.text-white{
+.text-white {
     color: white;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
     float: none;
 }
 
-a{
-    color: #ff6b81;
+a {
+    color: rgb(255, 160, 158);
     text-decoration: none;
 }
 a:hover{
@@ -257,3 +258,55 @@ fieldset{
         width: 100%;
     }
 }
+
+
+section.main-container {
+    padding: 24px;
+}
+
+section.main-container form {
+    /* width: 80%; */
+    padding: 24px;
+    background-color: rgb(255, 226, 216);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 24px;
+}
+
+section.main-container form label {
+    width: 60%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(131, 253, 180); */
+}
+
+section.main-container form .submit-btn {
+    width: 36%;
+    height: 32px;
+    margin: 0 12%;
+}
+
+
+.container .user-list thead {
+    border: 3px solid rgb(89, 91, 90);
+    /* background-color: cornflowerblue; */
+}
+
+.container .user-list td {
+    border: 3px solid cornflowerblue;
+    /* background-color: cornflowerblue; */
+    padding: 4px 12px;
+}
+
+.container .user-list td:first-child,
+.container .user-list td:last-child {
+    border: 3px solid rgb(161, 0, 0);
+    /* background-color: cornflowerblue; */
+    padding: 4px 12px;
+}
+
+
+
+

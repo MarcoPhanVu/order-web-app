@@ -11,48 +11,55 @@
 </head>
 
 <body>
-    <!-- Navbar Section Starts Here -->
-    <section class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
-                </a>
-            </div>
-
-            <div class="menu text-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categories.html">Categories</a>
-                    </li>
-                    <li>
-                        <a href="foods.html">Foods</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <!-- Navbar Section Ends Here -->
+    <?php include "./components/header.php"; ?>
+    <?php include "./admin/connection.php"; ?>
 
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
         <div class="container">
             
-            <h2>Foods on <a href="#" class="text-white">"Category"</a></h2>
+            <form action="food-search.html" method="POST">
+                <input type="search" name="search" placeholder="Search for Food.." required>
+                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            </form>
 
         </div>
     </section>
     <!-- fOOD sEARCH Section Ends Here -->
 
+    <!-- CAtegories Section Starts Here -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Explore Foods</h2>
 
+            <a href="category-foods.html">
+            <div class="box-3 float-container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Pizza</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Burger</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Momo</h3>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Categories Section Ends Here -->
 
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
@@ -72,7 +79,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
 
@@ -168,6 +175,9 @@
 
         </div>
 
+        <p class="text-center">
+            <a href="#">See All Foods</a>
+        </p>
     </section>
     <!-- fOOD Menu Section Ends Here -->
 
