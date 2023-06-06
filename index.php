@@ -1,6 +1,5 @@
 
     <?php include "./components/header.php"; ?>
-    <?php include "./admin/connection.php"; ?>
 
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
@@ -13,7 +12,7 @@
 
         </div>
     </section>
-    <!-- fOOD sEARCH Section Ends Here -->
+    <!-- Food Search Section Ends Here -->
 
     <!-- CAtegories Section Starts Here -->
     <section class="categories">

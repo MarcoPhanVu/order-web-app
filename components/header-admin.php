@@ -20,19 +20,24 @@
                 </a>
             </div>
 
-            <div class="menu text-right">
+            <div class="menu admin text-right">
                 <ul>
                     <li>
-                        <a href="../index.php">Homie</a>
+                        <a href="../admin/manage-admin.php">Edit Admins</a>
                     </li>
                     <li>
-                        <a href="../categories.php">CATegories</a>
+                        <a href="../admin/manage-category.php">Edit Category</a>
                     </li>
                     <li>
-                        <a href="../foods.php">FOODS!!!</a>
+                        <a href="../admin/manage-.php">Edit Foods</a>
                     </li>
                     <li>
-                        <a href="../admin/food-ordering.php">Order some food!</a>
+                        <a href="../admin/manage-.php">Edit Orders</a>
+                    </li>
+                    <li>
+                        <a href="../index.php">
+                            <button class="change-authority">User Mode</button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -41,3 +46,5 @@
         </div>
     </section>
     <!-- Navbar Section Ends Here -->
+
+    <?php include "../admin/connection.php"; ?>

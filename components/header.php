@@ -35,7 +35,9 @@
                         <a href="./admin/food-ordering.php">Order</a>
                     </li>
                     <li>
-                        <a href="./admin/manage-admin.php">Admin mode</a>
+                        <a href="./admin/manage-admin.php">
+                            <button class="change-authority">Admin Mode</button>
+                        </a>
                     </li>
                 </ul>
             </div>

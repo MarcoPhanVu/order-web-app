@@ -10,16 +10,16 @@
     padding: 0 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
     padding: 1%;
     /* background-color: aqua; */
 }
-.img-responsive{
+.img-responsive {
     width: 100%;
 }
-.img-curve{
+.img-curve {
     border-radius: 15px;
 }
 
@@ -45,42 +45,42 @@ a {
     color: rgb(255, 160, 158);
     text-decoration: none;
 }
-a:hover{
+a:hover {
     color: #ff4757;
 }
 
-.btn{
+.btn {
     padding: 1%;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
 }
-.btn-primary{
+.btn-primary {
     background-color: #ff6b81;
     color: white;
     cursor: pointer;
 }
-.btn-primary:hover{
+.btn-primary:hover {
     color: white;
     background-color: #ff4757;
 }
-h2{
+h2 {
     color: #2f3542;
     font-size: 2rem;
     margin-bottom: 2%;
 }
-h3{
+h3 {
     font-size: 1.5rem;
 }
-.float-container{
+.float-container {
     position: relative;
 }
-.float-text{
+.float-text {
     position: absolute;
     bottom: 50px;
     left: 40%;
 }
-fieldset{
+fieldset {
     border: 1px solid white;
     margin: 5%;
     padding: 3%;
@@ -90,18 +90,18 @@ fieldset{
 
 /* CSSS for navbar section */
 
-.logo{
+.logo {
     width: 10%;
     float: left;
 }
-.menu{
+.menu {
     line-height: 60px;
 }
-.menu ul{
+.menu ul {
     list-style-type: none;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     padding: 1%;
     font-weight: bold;
@@ -110,7 +110,7 @@ fieldset{
 
 /* CSS for Food SEarch Section */
 
-.food-search{
+.food-search {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,11 +128,11 @@ fieldset{
 
 
 /* CSS for Categories */
-.categories{
+.categories {
     padding: 4% 0;
 }
 
-.box-3{
+.box-3 {
     width: 28%;
     float: left;
     margin: 2%;
@@ -140,11 +140,11 @@ fieldset{
 
 
 /* CSS for Food Menu */
-.food-menu{
+.food-menu {
     background-color: #ececec;
     padding: 4% 0;
 }
-.food-menu-box{
+.food-menu-box {
     width: 43%;
     margin: 1%;
     padding: 2%;
@@ -153,42 +153,42 @@ fieldset{
     border-radius: 15px;
 }
 
-.food-menu-img{
+.food-menu-img {
     width: 20%;
     float: left;
 }
 
-.food-menu-desc{
+.food-menu-desc {
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.food-price{
+.food-price {
     font-size: 1.2rem;
     margin: 2% 0;
 }
-.food-detail{
+.food-detail {
     font-size: 1rem;
     color: #747d8c;
 }
 
 
 /* CSS for Social */
-.social ul{
+.social ul {
     list-style-type: none;
 }
-.social ul li{
+.social ul li {
     display: inline;
     padding: 1%;
 }
 
 /* for Order Section */
-.order{
+.order {
     width: 50%;
     margin: 0 auto;
 }
-.input-responsive{
+.input-responsive {
     width: 96%;
     padding: 1%;
     margin-bottom: 3%;
@@ -196,7 +196,7 @@ fieldset{
     border-radius: 5px;
     font-size: 1rem;
 }
-.order-label{
+.order-label {
     margin-bottom: 1%; 
     font-weight: bold;
 }
@@ -206,13 +206,13 @@ fieldset{
 /* CSS for Mobile Size or Smaller Screen */
 
 @media only screen and (max-width:768px){
-    .logo{
+    .logo {
         width: 80%;
         float: none;
         margin: 1% auto;
     }
 
-    .menu ul{
+    .menu ul {
         text-align: center;
     }
 
@@ -222,43 +222,93 @@ fieldset{
         margin-bottom: 3%;
     }
 
-    .btn{
+    .btn {
         width: 91%;
         padding: 2%;
     }
 
-    .food-search{
+    .food-search {
         padding: 10% 0;
     }
 
-    .categories{
+    .categories {
         padding: 20% 0;
     }
-    h2{
+    h2 {
         margin-bottom: 10%;
     }
-    .box-3{
+    .box-3 {
         width: 100%;
         margin: 4% auto;
     }
 
-    .food-menu{
+    .food-menu {
         padding: 20% 0;
     }
 
-    .food-menu-box{
+    .food-menu-box {
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
     }
-    .social{
+    .social {
         padding: 5% 0;
     }
-    .order{
+    .order {
         width: 100%;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* ADMIN SECTION */
+.menu.admin > ul > li > a {
+    color: cadetblue;
+}
+
+.change-authority {
+    text-transform: uppercase;
+    background-color: white;
+    color: cadetblue;
+    padding: 8px;
+    position: relative;
+    border: 2px solid cadetblue;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.change-authority::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    background-color: cadetblue;
+    border-radius: 200px;
+    transition: ease-in-out 400ms;
+}
+
+.change-authority:hover {
+    color: white;
+}
+
+.change-authority:hover:after {
+    width: 140px;
+    height: 140px;
+}
 
 section.main-container {
     padding: 24px;
@@ -288,33 +338,31 @@ section.main-container form .submit-btn {
     margin: 0 12%;
 }
 
-
-
-.container .user-list {
+.container .object-list {
     width: 100%;
-    background-color: rgb(210, 171, 255);
+    /* background-color: rgb(210, 171, 255); */
 }
 
 
-.container .user-list thead tr th {
+.container .object-list thead tr th {
     border-bottom: 2px solid rgb(0, 0, 0);
     padding: 8px;
     text-align: left;
     /* background-color: cornflowerblue; */
 }
 
-.container .user-list td {
+.container .object-list td {
     border: 3px solid cornflowerblue;
     padding: 4px 12px;
     border-top: none;
     border-left: none;
 }
 
-.container .user-list td:first-child,
-.container .user-list td:last-child {
-}
+/* .container .object-list td:first-child,
+.container .object-list td:last-child {
+} */
 
-.container .user-list td button.action-btn {
+.container .object-list td button.action-btn {
     cursor: pointer;
     min-width: 60px;
     width: 48%;
@@ -324,11 +372,11 @@ section.main-container form .submit-btn {
     border: none;
 }
 
-.container .user-list td button.action-btn:hover {
+.container .object-list td button.action-btn:hover {
     color: #fff;
 }
 
-.container .user-list td button.action-btn.delete {
+.container .object-list td button.action-btn.delete {
     background-color:rgb(255, 160, 158)
 }
 

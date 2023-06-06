@@ -1,7 +1,7 @@
 <?php 
     define('DB_HOST', 'localhost');
     define('DB_USER', 'marco');
-    define('DB_PASS', '123456');
+    define('DB_PASS', 'marcopass');
     define('DB_NAME', 'food_ordering');
     define('DB_PORT', '3108'); // Needed this because the default port is 3306
 
@@ -15,6 +15,6 @@
         // die ~ return
     }
 
-    echo "Connected to the server";
+    // echo "Connected to " . DB_PORT . " as " . DB_USER;
 
 ?>
